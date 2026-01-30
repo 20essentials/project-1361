@@ -1,5 +1,4 @@
 'use server';
-
 import { redis } from '@/lib/redis';
 import { isValidIcon } from '@/lib/subdomains';
 import { revalidatePath } from 'next/cache';
