@@ -22,6 +22,9 @@ export default async function HomePage() {
           <p className='mt-3 text-lg text-gray-600'>
             Create your own subdomain with a custom emoji
           </p>
+          <p className='mt-3 text-lg text-gray-600'>
+            Note: The redirect won't work if I delete the domain by the time you read this, okay, honey?
+          </p>
         </div>
 
         <div className='mt-8 bg-white shadow-md rounded-lg p-6'>
