@@ -1,7 +1,5 @@
 'use client';
 
-import type React from 'react';
-
 import { useState } from 'react';
 import { useActionState } from 'react';
 import { Button } from '@/components/ui/button';
@@ -126,7 +124,6 @@ function IconPicker({
 
 export function SubdomainForm() {
   const [icon, setIcon] = useState('');
-
   const [state, action, isPending] = useActionState<CreateState, FormData>(
     createSubdomainAction,
     {}

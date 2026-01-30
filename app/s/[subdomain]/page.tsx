@@ -37,7 +37,7 @@ export default async function SubdomainPage({
   }
 
   return (
-    <div className="flex min-h-screen flex-col bg-gradient-to-b from-blue-50 to-white p-4">
+    <div className="flex min-h-screen flex-col  p-4 z-10 relative">
       <div className="absolute top-4 right-4">
         <Link
           href={`${protocol}://${rootDomain}`}
@@ -53,7 +53,7 @@ export default async function SubdomainPage({
           <h1 className="text-4xl font-bold tracking-tight text-gray-900">
             Welcome to {subdomain}.{rootDomain}
           </h1>
-          <p className="mt-3 text-lg text-gray-600">
+          <p className="mt-3 text-lg text-gray-800">
             This is your custom subdomain page
           </p>
         </div>
