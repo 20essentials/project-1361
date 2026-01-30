@@ -52,6 +52,7 @@ export async function middleware(request: NextRequest) {
 
     // For the root path on a subdomain, rewrite to the subdomain page
     if (pathname === '/') {
+      // console.log({ hostFromcreateSubdomainAction: request.headers.get('host')})
       return NextResponse.rewrite(new URL(`/s/${subdomain}`, request.url));
     }
   }
