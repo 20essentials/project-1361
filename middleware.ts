@@ -25,7 +25,7 @@ function extractSubdomain(request: NextRequest): string | null {
   //Do this just for Vercel
   if (hostname.endsWith('.vercel.app')) {
     const parts = hostname.split('.');
-    return parts.length > 4 ? parts[0] : null;
+    return parts.length > 3 ? parts[0] : null;
   }
 
   // Production environment
